@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Embed & Object test</title>
+		<script src="./audiojs/audio.min.js"></script>
+	</head>
+	<body>
+		<script>
+			audiojs.events.ready(function()
+				{
+					var as = audiojs.createAll();
+				});
+		</script>
+		<script language="JavaScript">
+			changeTrack = function(e)
+			{
+				if(!e)
+				{
+					if(e = window.event)
+					{
+						console.log("changeTrack executed");
+						document.getElementById("player").FileName = "Puzzle.mp3";
+					}
+				}
+			}
+			ontimeupdatechange = function()
+			{
+				console.log("ontimeupdatechange executed");
+				var playr = document.getElementById("player");
+				if (playr.CurrentPosition >=playr.Duration - 1)
+				{
+					playr.FileName = "Puzzle.mp3";
+				}
+			}
+		</script>
+		<audio id="player" src="Adventure.mp3" preload="auto"></audio>
+		<script language="JavaScript">
+			
+		</script>
+	</body>
+</html>
