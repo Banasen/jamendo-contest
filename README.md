@@ -1,17 +1,18 @@
 jamRadio (provisoric name)
 ==============================
 
-(http://puu.sh/3c2ty.png "Screenshot")
+(http://puu.sh/3c2ty.png "Screenshot") (outdated!)
 
-Web-application to get more listeners for your tracks.
+Web-application to find new music to listen to, much like a radio channel.
 
-The working method is easy, you listen to the tracks of others, for which you are regarded points.
-The Tracks you add will be heared by others for the cost of points.
+The working method is easy, the page autorefreshes after 20 sec if there is no song in the current playlist
+else it will play the song and refresh the page after the song is finished, to play the next song.
+The Tracks you add will be heared by others.
+The tracks others add will be heard by you.
 
-There's no functionality yet, but we hope that it will be different, once we got time to finish it.
+The page is working, but it does not have any easy method of adding songs to the playlist and the playback method isent that great.
 
-Here's a link to the current webpage: http://ts.svennp.com/CControl/JamRadio/
+Here's a link to the curent webpage: http://sp.svennp.com/JamRadio/
 
+all code for the project will be added once we have a mostly working project.
 ==============================
-
-Audiojs (https://github.com/kolber/audiojs) is used for playing the tracks.
